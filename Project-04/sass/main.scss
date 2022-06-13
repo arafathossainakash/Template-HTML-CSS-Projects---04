@@ -1,0 +1,392 @@
+@import"variable";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+header{
+    width: 1235px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        margin-top: 20px;
+        a{
+            color: $secondary;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 900;
+            cursor: pointer;
+            transition:0.3s;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .menu{
+        margin-top: 55px;
+
+        a{
+            text-decoration: none;
+            color: $secondary;
+            font-weight: 600;
+            padding-right: 15px;
+            cursor: pointer;
+            transition:0.3s;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    
+    .icons{
+        margin-top: 30px;
+        i{
+            color: $ternary;
+            cursor: pointer;
+            padding-right:20px;
+            font-size: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+.hero{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .container {
+        width: 1235px;
+        margin: 0 auto;
+        display: flex;
+
+        .left{
+            width: 620px;
+            background: $bg;
+            
+            h1{
+                margin-left: 45px;
+                font-size: 50px;
+                text-transform: capitalize;
+                margin-top: 70px; 
+                line-height: 1.5;
+
+            }
+            h3{
+                margin-top: 35px;
+                margin-left: 45px;
+                margin-bottom: 40px;
+                color: $ternary;
+            }
+
+            button{
+                background: $secondary;
+                border: none;
+                outline: none;
+                font-size: 17px;
+                font-weight: 400;
+                padding: 10px 20px;
+                color: #ffffff;
+                margin: 20px 50px;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-family: 'Montserrat', sans-serif;
+
+                &:hover{
+                    background: $primary;
+                    color: #ffffff;
+                }
+            }
+            
+        }
+        .right{
+            width: 620px;
+            height: 530px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.order{
+    h2{
+        text-align: center;
+        color: $ternary;
+        
+        span{
+            color: $primary;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+
+    .orderWrapper{
+        border-top: 1px solid #f1eaea;
+        width: 1235px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        .box{
+            width: 395px;
+            height: 530px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            img{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            .newItem{
+                box-sizing: border-box;
+                color: $secondary;
+                background: aquamarine;
+                position: absolute;
+                border: none;
+                outline: none;
+                padding: 7px 21px;
+                top: 10%;
+                left: 20%;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    color: $primary;
+                    font-weight: 600;
+                    background: transparent;
+                    border: 1px solid $primary;
+                    
+                }
+            }
+            h1{
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                color: $primary;
+                
+            }
+            a{
+                position: absolute;
+                color: $primary;
+                font: 600;
+                top: 90%;
+                left: 20%;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover{
+                    color: darkblue;
+                }
+            }
+        }
+    }
+}
+
+.ourSpecial{
+    .specialWrapper{
+        width: 1235px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        background: $bg;
+        .specialLeft{
+            
+        }
+        .specialRight{
+            
+        h3{
+            margin-top: 80px;
+            margin-left: 120px;
+            font-size: 25px;
+            font-weight: 300;
+            padding-bottom: 15px;
+            
+            
+        }
+        h1{
+            
+            margin-top: 5px;
+            margin-left: 120px;
+            font-size: 30px;
+            line-height: 1.7;
+            font-weight: 700;
+              
+              
+        }
+
+        .specialBtn {
+            font-size: 18px;
+            padding: 13px 23px;
+            outline: none;
+            border: none;
+            background: $secondary;
+            color: #ffffff;
+            margin: 65px 125px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover{
+                background: $primary;
+            }
+
+        }
+        }
+    }
+}
+
+.delivary{
+    margin-top: 100px;
+
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .delivaryWrapper{
+        width: 1235px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+
+        .delivaryCart{
+            width: 410px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            &:hover i{
+                color: $ternary;
+            }
+            i{
+                
+                font-size: 70px;
+                margin: 20px 165px;
+                color: $primary;
+                transition: 0.3s;
+            }
+            h2{
+                text-align: center;
+                font-size: 21px;
+                font-weight: 600;
+
+            }
+             
+                p {
+                    text-align: center;
+                    padding: 30px 30px;
+                    line-height: 1.7;
+                    font-size: 17px;
+                    color: $ternary;
+                }
+
+                .delivaryBtn {
+                    font-size: 15px;
+                    padding: 5px 20px;
+                    border: none;
+                    outline: none;
+                    margin: 0px 135px;
+                    margin-bottom: 20px;
+                    background: $secondary;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-family: $font;
+                    
+                    &:hover{
+                        background: $primary;
+                        
+                    }
+                }
+            
+        }
+    }
+}
+
+.packeg{
+    height: 100vh;
+    margin-top: 100px;
+    h1{
+        text-align: center;
+    }
+    .priceWrapper{
+        width: 1235px;
+        margin: 0px auto;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .priceCart{
+            width: 265px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+            h3{
+                padding-top: 20px;
+                padding-bottom: 30px;
+                font-family: $font; 
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $ternary;
+                
+            }
+            h1{
+                padding-bottom: 25px;
+                font-family: $font; 
+                color: #1eb2a6;
+                font-size: 30px;
+            }
+            p{
+                line-height: 1.5;
+                font-size: 19px;
+                padding: 0 25px;
+                padding-bottom: 30px;
+                font-family: $font; 
+                font-weight: 400;
+                color: $ternary;
+            }
+            .pricingBtn{
+                font-family: $font;
+                padding: 13px 21px; 
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 14px;
+                outline: none;
+                font-weight: 600;
+                color: #ffffff ;
+                background: #1eb2a6;
+                border: 1px solid #1eb2a6;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                &:hover{
+                    color: #1eb2a6 ;
+                    background:#ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
